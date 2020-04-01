@@ -48,18 +48,5 @@ export default {
                 language: 'js',
             },
         },
-        {
-            name: 'gallery',
-            type: 'object',
-            title: 'Gallery',
-            fields: [
-                {
-                    title: 'Images',
-                    name: 'images',
-                    type: 'array',
-                    of: [{ type: 'imageGallery' }],
-                },
-            ],
-        },
     ],
 };

@@ -58,8 +58,20 @@ export default {
             title: 'Body',
             type: 'richText',
         },
+        {
+            name: 'gallery',
+            type: 'object',
+            title: 'Gallery',
+            fields: [
+                {
+                    title: 'Images',
+                    name: 'images',
+                    type: 'array',
+                    of: [{ type: 'imageGallery' }],
+                },
+            ],
+        },
     ],
-
     preview: {
         select: {
             title: 'title',
