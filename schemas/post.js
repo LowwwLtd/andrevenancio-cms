@@ -26,14 +26,6 @@ export default {
             },
         },
         {
-            name: 'thumbnail',
-            title: 'Menu thumbnail',
-            type: 'image',
-            options: {
-                hotspot: true,
-            },
-        },
-        {
             name: 'vimeo',
             title: 'Vimeo',
             type: 'url',
@@ -71,7 +63,7 @@ export default {
     preview: {
         select: {
             title: 'title',
-            media: 'thumbnail',
+            media: 'mainImage',
         },
     },
 };
