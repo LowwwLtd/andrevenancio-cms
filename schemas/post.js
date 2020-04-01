@@ -32,6 +32,14 @@ export default {
             },
         },
         {
+            name: 'thumbnail',
+            title: 'Menu thumbnail',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
+        {
             name: 'categories',
             title: 'Categories',
             type: 'array',
@@ -64,7 +72,7 @@ export default {
         select: {
             title: 'title',
             author: 'author.name',
-            media: 'mainImage',
+            media: 'thumbnail',
         },
         prepare(selection) {
             const { author } = selection;

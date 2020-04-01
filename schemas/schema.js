@@ -11,6 +11,7 @@ import post from './post';
 import author from './author';
 import info from './info';
 import technology from './technology';
+import imageGallery from './image-gallery/';
 
 export default createSchema({
     name: 'default',
@@ -21,5 +22,6 @@ export default createSchema({
         technology,
         blockContent,
         info,
+        imageGallery,
     ]),
 });
