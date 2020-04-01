@@ -18,12 +18,6 @@ export default {
             },
         },
         {
-            name: 'author',
-            title: 'Author',
-            type: 'reference',
-            to: { type: 'author' },
-        },
-        {
             name: 'mainImage',
             title: 'Main image',
             type: 'image',
@@ -40,6 +34,11 @@ export default {
             },
         },
         {
+            name: 'vimeo',
+            title: 'Vimeo',
+            type: 'url',
+        },
+        {
             name: 'categories',
             title: 'Categories',
             type: 'array',
@@ -52,9 +51,10 @@ export default {
             of: [{ type: 'reference', to: { type: 'technology' } }],
         },
         {
-            name: 'publishedAt',
-            title: 'Published at',
-            type: 'datetime',
+            name: 'awards',
+            title: 'Awards',
+            type: 'array',
+            of: [{ type: 'reference', to: { type: 'awards' } }],
         },
         {
             name: 'info',
@@ -64,21 +64,14 @@ export default {
         {
             name: 'body',
             title: 'Body',
-            type: 'blockContent',
+            type: 'richText',
         },
     ],
 
     preview: {
         select: {
             title: 'title',
-            author: 'author.name',
             media: 'thumbnail',
-        },
-        prepare(selection) {
-            const { author } = selection;
-            return Object.assign({}, selection, {
-                subtitle: author && `by ${author}`,
-            });
         },
     },
 };

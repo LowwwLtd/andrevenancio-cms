@@ -5,23 +5,25 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // We import object and document schemas
-import blockContent from './blockContent';
+import richText from './rich-text';
 import category from './category';
 import post from './post';
-import author from './author';
 import info from './info';
 import technology from './technology';
+import awards from './awards';
 import imageGallery from './image-gallery/';
+import vimeo from './vimeo';
 
 export default createSchema({
     name: 'default',
     types: schemaTypes.concat([
         post,
-        author,
         category,
         technology,
-        blockContent,
+        awards,
         info,
+        richText,
         imageGallery,
+        vimeo,
     ]),
 });
