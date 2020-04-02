@@ -18,6 +18,11 @@ export default {
             },
         },
         {
+            name: 'createdAt',
+            title: 'Created at',
+            type: 'datetime',
+        },
+        {
             name: 'mainImage',
             title: 'Main image',
             type: 'image',
